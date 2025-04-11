@@ -50,7 +50,9 @@ android {
     lint {
         disable += "LongLogTag"
         disable += "NewApi"
+        baseline = file("lint-baseline.xml")
     }
+
 }
 
 dependencies {
